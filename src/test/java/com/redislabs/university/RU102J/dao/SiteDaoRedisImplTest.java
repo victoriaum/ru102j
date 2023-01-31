@@ -113,11 +113,12 @@ public class SiteDaoRedisImplTest {
      * Challenge #1 Part 2. Use this test case to
      * implement the challenge in Chapter 1.
      */
-    @Ignore
+    //@Ignore
     @Test
     public void findAllWithEmptySites() {
         SiteDaoRedisImpl dao = new SiteDaoRedisImpl(jedisPool);
-        assertThat(dao.findAll(), is(empty()));
+        Set<Site> entity = new HashSet<>();
+        assertThat(dao.findAll(), is(entity));
     }
 
     @Test
