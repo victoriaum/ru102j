@@ -94,7 +94,9 @@ public class SiteGeoDaoRedisImplTest {
     @Test
     public void findAllWithEmptySites() {
         SiteDaoRedisImpl dao = new SiteDaoRedisImpl(jedisPool);
-        assertThat(dao.findAll(), is(empty()));
+        Set<Site> sites = dao.findAll();
+
+        assertThat(sites, is(empty()));
     }
 
     @Test

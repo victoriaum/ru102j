@@ -55,7 +55,7 @@ public class MetricDaoRedisZsetImplTest extends JedisDaoTestBase {
     }
 
     // Challenge #2
-    @Ignore
+    //@Ignore
     @Test
     public void testOneDay() {
         testInsertAndRetrieve(60 * 24);
@@ -63,7 +63,7 @@ public class MetricDaoRedisZsetImplTest extends JedisDaoTestBase {
 
 
     // Challenge #2
-    @Ignore
+    //@Ignore
     @Test
     public void testMultipleDays() {
         testInsertAndRetrieve(60 * 70);
